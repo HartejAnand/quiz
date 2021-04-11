@@ -37,13 +37,16 @@ class Quiz {
     var results=createElement('h2');
     results.html("  RESULTS");
     //call getContestantInfo( ) here
+    contestant.js/getPlayerInfo( );
+
+    //write condition to check if contestantInfor is not undefined
     if(allConstraints !== undefined){
       fill(255,0,255);
       textSize(30);
-      text("correct answers in green",130,230);
     }
-
-    //write condition to check if contestantInfor is not undefined
+    //write code to add a note here
+          text("correct answers in green",130,230);
+    //write code to highlight contest who answered correctly
     for(var plr in allConstraints){
       var correct =2;
       if(correct===allConstraints[plr].answer){
@@ -52,14 +55,11 @@ class Quiz {
       else{
         fill(255,155,0);
       }
-      display_position+=30
-        text(allConstraints[plr].name,250,display_position);
+      display_position+=30;
+        //text(allConstraints[plr].name,250,display_position);
+        text("testing",250,display_position);
       
     }
-    //write code to add a note here
-
-    //write code to highlight contest who answered correctly
-    
   }
 
 }
