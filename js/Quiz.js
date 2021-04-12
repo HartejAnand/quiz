@@ -9,6 +9,7 @@ class Quiz {
 
   }
 
+
   update(state){
     database.ref('/').update({
       gameState: state
@@ -32,13 +33,12 @@ class Quiz {
     //write code here to hide question elements
     question.hide();
     //write code to change the background color here
-    background(0,0,155);
+    background(100,100,255);
     //write code to show a heading for showing the result of Quiz
     var results=createElement('h2');
     results.html("  RESULTS");
     //call getContestantInfo( ) here
-    contestant.js/getPlayerInfo( );
-
+    Contestant.getPlayerInfo( );
     //write condition to check if contestantInfor is not undefined
     if(allConstraints !== undefined){
       fill(255,0,255);

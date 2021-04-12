@@ -16,6 +16,7 @@ class Contestant {
     database.ref('/').update({
       contestantCount: count
     });
+    console.log("ytrewq");
   }
 
   update(){
@@ -24,6 +25,7 @@ class Contestant {
       name:this.name,
       answer:this.answer
     });
+    console.log("abcdefghijklmnop");
   }
 
   static getPlayerInfo(){
@@ -31,5 +33,6 @@ class Contestant {
     contestantInfoRef.on("value",(data)=>{
       allContestants = data.val();
     })
+    console.log("qwerty");
   }
 }
